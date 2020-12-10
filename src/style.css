@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+#container{
+  position: relative;
+  font-family: 'Lora', serif;
+  color: rgba(68, 62, 62, 0.8);
+}
+header{
+  background-color:rgba(233, 219, 219, 0.65);
+  height: 7vh;
+  min-height: 3rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#menu-hamburger{
+  height: 7vh;
+  min-height: 3rem;
+  width: 10vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.backDiv:before{
+  padding-top: 4vh;
+  content: ' ';
+  height: 93vh;
+  width: 100%;
+  background: url('../resources/1.jpg');
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.backDiv{
+  height: 93vh;
+  width: 100%;
+  position: relative;
+  padding-top: 4vh;
+  overflow-y: hidden;
+
+}
+.backDiv:first-of-type{
+  height: 100vh;
+}
+.backDiv:first-of-type:before{
+  opacity: 0.6;
+  height: 100vh;
+}
+#presentation{
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  color: #FAE5DD;
+
+
+}
+#presentation>h1{
+  font-size: 4em;
+}
+#presentation>h1>span{
+  font-size: 1.75em;
+}
+#presentation>h2{
+  font-size: 3em;
+  margin-left: 5%;
+}
+.prez{
+  width: 90%;
+  height: 10vh;
+  background: rgba(44, 44, 44, 0.12);
+  margin: 0 auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prez>h1{
+  font-weight: 500;
+  margin-left: 2vh;
+  font-size: 2.5rem;
+}
+.prez>img{
+  height: 130%;
+  opacity: 0.8;
+}
+.flexcont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10vh 1vw 10vh 2vw;
+}
+.flexcont>ul>li{
+  list-style: none;
+  line-height: 3em;
+  font-size: 2.5em;
+  }
+.flexcont>img{
+width: 15vw;
+border-radius: 20px;
+}
+.flexcont>p{
+  width: 50%;
+  font-size: 2.5em;
+  line-height: 2em;
+}
