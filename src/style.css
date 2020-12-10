@@ -1,0 +1,19 @@
+#container{
+  position: relative;
+}
+header{
+  background-color:rgba(233, 219, 219, 0.65);
+  height: 7vh;
+  min-height: 3rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.backDiv{
+  height: 100vh;
+  background: url('../resources/1.jpg');
+  background-size: cover;
+  opacity: 0.6;
+}
