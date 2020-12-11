@@ -18,10 +18,29 @@ header{
 #menu-hamburger{
   height: 7vh;
   min-height: 3rem;
-  width: 10vw;
+  width: 8vw;
   position: fixed;
   top: 0;
   right: 0;
+}
+
+ul li { 
+  height: 7vh;
+  min-height: 2rem;
+  width: 10vw;
+  position: relative;
+  top: 0;
+  left: 1rem;
+  z-index: 1;
+  list-style: none;
+  display: inline;
+  flex-direction: inherit;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+a{
+  color: #707070;
 }
 
 .backDiv:before{
