@@ -16,27 +16,16 @@ header{
 }
 
 #menu-hamburger{
-  height: 7vh;
-  min-height: 3rem;
-  width: 8vw;
+  width:4vw;
   position: fixed;
-  top: 0;
   right: 0;
 }
-
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
 ul li { 
-  height: 7vh;
-  min-height: 2rem;
-  width: 10vw;
-  position: relative;
-  top: 0;
-  left: 1rem;
-  z-index: 1;
-  list-style: none;
-  display: inline;
-  flex-direction: inherit;
-  justify-content: space-between;
-  padding: 4rem;
+    list-style: none;
 }
 
 a{
