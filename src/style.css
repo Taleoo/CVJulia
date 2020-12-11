@@ -74,8 +74,16 @@ header {
   font-size: 2.5rem;
 }
 .prez > img {
-  height: 130%;
+  height: 5rem;
+  opacity: 0.3;
+}
+#firstlogo {
+  height: 7rem;
   opacity: 0.8;
+}
+.prez:first-of-type > img:first-of-type {
+  height: 5rem;
+  opacity: 0.3;
 }
 .flexcont {
   display: flex;
@@ -96,4 +104,102 @@ header {
   width: 50%;
   font-size: 2.5em;
   line-height: 2em;
+}
+#formation {
+  height: 93vh;
+  padding-top: 4vh;
+  background: rgba(112, 112, 112, 0.21);
+}
+#formation > .prez {
+  background: rgba(182, 186, 191, 0.39);
+  border-radius: 0;
+  width: 95%;
+}
+#studycontainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3vh auto;
+}
+.studycard {
+  height: 77vh;
+  width: 30vw;
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 2em;
+  font-size: 1.125rem;
+}
+.studycard > p {
+  margin-left: 5%;
+}
+.studycard:first-of-type {
+  background: rgba(112, 112, 112, 0.32);
+}
+
+.studycard:nth-of-type(2) {
+  background: rgba(177, 165, 175, 0.4);
+}
+.studycard:last-of-type {
+  background: rgba(182, 186, 191, 0.62);
+}
+.studycard > img {
+  height: 30%;
+  width: 90%;
+  margin: 0 auto;
+}
+.boxh2 {
+  background: rgba(255, 255, 255, 0.25);
+  width: 95%;
+  height: 10vh;
+  margin: 2vh auto;
+  line-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxh2 > h2 {
+  font-weight: 250;
+}
+.studycard:nth-of-type(2) > .boxh2 {
+  text-align: center;
+}
+.lined {
+  text-decoration: underline;
+}
+#container > .backDiv:nth-of-type(4) {
+  background: url(../resources/frise.png) no-repeat;
+  background-position: 60% 65%;
+  background-size: 50%;
+  font-size: 1.75rem;
+  line-height: 1.5em;
+}
+#container > .backDiv:nth-of-type(4) > .prez {
+  background-color: transparent;
+}
+#exp1 {
+  width: 35vw;
+  position: absolute;
+  top: 18%;
+  left: 17%;
+}
+#exp2 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+#exp3 {
+  position: absolute;
+  top: 73%;
+  left: 8%;
+  width: 35vw;
+}
+#exp4 {
+  position: absolute;
+  top: 72%;
+  left: 63%;
+  text-align: right;
+}
+.exptitle{
+  font-weight: 900;
+  text-decoration: underline;
 }
