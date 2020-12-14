@@ -25,15 +25,15 @@ header {
   right: 1.2rem; 
 
 }
-ul{
+header>ul{
   display: flex;
   justify-content: space-evenly;
 }
-ul li { 
+header>ul>li { 
     list-style: none;
 }
 
-a{
+header>ul>li>a{
   color: #707070;
   text-decoration: none;
   font-size: 23px;
@@ -228,11 +228,11 @@ a{
   text-decoration: underline;
 }
 #biggerDiv{
-  height: 250vh;
+  height: 210vh;
 
 }
 #biggerDiv:before{
-  height: 250vh;
+  height: 210vh;
 }
 #comp{
   display: flex;
@@ -271,6 +271,7 @@ background-color: rgb(223, 223, 223);
   background-color: rgb(235, 235, 235);
   width: 100%;
   padding: 4vh 0;
+  margin-top: 5vh;
 }
 #portefolio>h1{
   text-align: center;
