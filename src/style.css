@@ -228,11 +228,11 @@ header>ul>li>a{
   text-decoration: underline;
 }
 #biggerDiv{
-  height: 210vh;
+  height: 220vh;
 
 }
 #biggerDiv:before{
-  height: 210vh;
+  height: 220vh;
 }
 #comp{
   display: flex;
@@ -286,4 +286,49 @@ background-color: rgb(223, 223, 223);
   display: block;
   margin: 0 auto;
   width: 8vw;
+}
+#lastDiv{
+  padding: 4vh 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(221, 212, 211);
+}
+#lastDiv>.prez{
+  position: relative;
+}
+#lastDiv>.prez>img{
+  position: absolute;
+  left: 20%;
+  top: 0;
+  opacity: 1;
+  width: auto;
+  height: 80%;
+}
+#lastDiv>img{
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+#contact{
+  width: 30vw;
+  font-size: 1.75em;
+}
+#contact>form{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+}
+#contact>form>textarea{
+  width: 90%;
+}
+#contact>form>input{
+  width: 60%;
+}
+#contact>form>input[type=submit]{
+  width: 50%;
 }
