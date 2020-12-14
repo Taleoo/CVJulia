@@ -102,7 +102,7 @@ header {
 }
 .flexcont > p {
   width: 50%;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 2em;
 }
 #formation {
@@ -126,7 +126,7 @@ header {
   width: 30vw;
   display: flex;
   flex-flow: column wrap;
-  line-height: 2em;
+  line-height: 1.75em;
   font-size: 1.125rem;
 }
 .studycard > p {
@@ -168,7 +168,7 @@ header {
 }
 #container > .backDiv:nth-of-type(4) {
   background: url(../resources/frise.png) no-repeat;
-  background-position: 60% 65%;
+  background-position: 57% 60%;
   background-size: 50%;
   font-size: 1.75rem;
   line-height: 1.5em;
@@ -179,13 +179,13 @@ header {
 #exp1 {
   width: 35vw;
   position: absolute;
-  top: 18%;
-  left: 17%;
+  top: 15%;
+  left: 15%;
 }
 #exp2 {
   position: absolute;
   top: 25%;
-  left: 75%;
+  left: 77%;
 }
 #exp3 {
   position: absolute;
@@ -202,4 +202,63 @@ header {
 .exptitle{
   font-weight: 900;
   text-decoration: underline;
+}
+#biggerDiv{
+  height: 250vh;
+
+}
+#biggerDiv:before{
+  height: 250vh;
+}
+#comp{
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 4vh
+}
+.tablecomp{
+  margin: 0 auto;
+  font-size: 1.75em;
+  width: 90%;
+  border-collapse: collapse;
+}
+td, th{
+  border: 2px solid black;
+  font-weight: 500;
+  height: 8vh;
+  padding: 5px;
+  text-align: center;
+}
+.color1{
+background-color: rgb(202, 202, 202);
+}
+.color2{
+background-color: rgb(223, 223, 223);
+}
+#logos1, #logos2{
+  display: flex;
+  justify-content: space-around;
+  margin: 4vh 0;
+}
+#logos1>img, #logos2>img{
+  width: 13vw;
+  height: 10vh;
+}
+#portefolio{
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  padding: 4vh 0;
+}
+#portefolio>h1{
+  text-align: center;
+  font-size: 3em;
+}
+#portefolio>h1>a{
+  margin: 0 auto;
+  text-decoration: underline;
+  color: rgb(112, 112, 112);
+}
+#portefolio>a>img{
+  display: block;
+  margin: 0 auto;
+  width: 8vw;
 }
