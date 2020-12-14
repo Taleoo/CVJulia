@@ -13,14 +13,38 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+  font-family: 'Lora', serif;
+
 }
 
-.backDiv:before {
+#menu-hamburger{
+  width: 4vw;
+  position: absolute;
+  margin: 0.2%;
+  top: -0.6rem;
+  right: 1.2rem; 
+
+}
+header>ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+header>ul>li { 
+    list-style: none;
+}
+
+header>ul>li>a{
+  color: #707070;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.backDiv:before{
   padding-top: 4vh;
-  content: " ";
+  content: ' ';
   height: 93vh;
   width: 100%;
-  background: url("../resources/1.jpg");
+  background: url('../resources/1.jpg');
   background-size: cover;
   opacity: 0.2;
   position: absolute;
@@ -204,11 +228,11 @@ header {
   text-decoration: underline;
 }
 #biggerDiv{
-  height: 250vh;
+  height: 210vh;
 
 }
 #biggerDiv:before{
-  height: 250vh;
+  height: 210vh;
 }
 #comp{
   display: flex;
@@ -247,6 +271,7 @@ background-color: rgb(223, 223, 223);
   background-color: rgb(235, 235, 235);
   width: 100%;
   padding: 4vh 0;
+  margin-top: 5vh;
 }
 #portefolio>h1{
   text-align: center;
