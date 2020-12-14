@@ -13,14 +13,38 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+  font-family: 'Lora', serif;
+
 }
 
-.backDiv:before {
+#menu-hamburger{
+  width: 4vw;
+  position: absolute;
+  margin: 0.2%;
+  top: -0.6rem;
+  right: 1.2rem; 
+
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li { 
+    list-style: none;
+}
+
+a{
+  color: #707070;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.backDiv:before{
   padding-top: 4vh;
-  content: " ";
+  content: ' ';
   height: 93vh;
   width: 100%;
-  background: url("../resources/1.jpg");
+  background: url('../resources/1.jpg');
   background-size: cover;
   opacity: 0.2;
   position: absolute;
