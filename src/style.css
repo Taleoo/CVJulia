@@ -17,26 +17,27 @@ header{
 
 }
 
-#menu-hamburger{
-  width: 4vw;
-  position: absolute;
-  margin: 0.2%;
-  top: -0.6rem;
-  right: 1.2rem; 
 
-}
-ul{
+header>ul{
   display: flex;
   justify-content: space-evenly;
 }
-ul li { 
+header>ul>li { 
     list-style: none;
 }
 
-a{
+header>ul>li>a{
   color: #707070;
   text-decoration: none;
   font-size: 23px;
+}
+
+header>ul>li>i{
+  font-size: 3.5rem;
+  padding-right: 2rem;
+  left: 3.2rem;
+  position: relative;
+  margin-top: -0.8rem;
 }
 
 .backDiv:before{
