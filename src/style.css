@@ -13,12 +13,17 @@ header{
   top: 0;
   left: 0;
   z-index: 1;
+  font-family: 'Lora', serif;
+
 }
 
 #menu-hamburger{
-  width:4vw;
-  position: fixed;
-  right: 0;
+  width: 4vw;
+  position: absolute;
+  margin: 0.2%;
+  top: -0.6rem;
+  right: 1.2rem; 
+
 }
 ul{
   display: flex;
@@ -30,6 +35,8 @@ ul li {
 
 a{
   color: #707070;
+  text-decoration: none;
+  font-size: 23px;
 }
 
 .backDiv:before{
