@@ -9,10 +9,22 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/script.js"></script>
     <title>Julia Carretero développeuse web</title>
   </head>
   <body>
+    <script>
+      AOS.init();
+    </script>
     <div id="container">
       <header>
         <ul>
@@ -64,7 +76,7 @@
           <h1>FORMATION</h1>
         </div>
         <div id="studycontainer">
-          <div class="studycard">
+          <div class="studycard" data-aos-duration="1200" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="boxh2"><h2>Développement Web</h2></div>
             <img
               src="resources/webdeveloppement.png"
@@ -78,7 +90,7 @@
               Niveau Bac + 2
             </p>
           </div>
-          <div class="studycard">
+          <div class="studycard" data-aos-duration="1200" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="boxh2">
               <h2>Gestion des Entreprises & Administrations</h2>
             </div>
@@ -96,7 +108,7 @@
               Option GMO (gestion et management des organisations)
             </p>
           </div>
-          <div class="studycard">
+          <div class="studycard" data-aos-duration="1200" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="boxh2"><h2>Musique</h2></div>
             <img src="resources/musique2.jpg" alt="Musique image" />
             <p>
@@ -153,8 +165,8 @@
           <img src="resources/compétences.png" alt="logo Experience" />
           <h1>COMPÉTENCES</h1>
         </div>
-        <div id="comp">
-          <table class="tablecomp">
+        <div id="comp" >
+          <table class="tablecomp" data-aos="zoom-in" data-aos-duration='600' data-aos-anchor-placement="center-bottom">
             <thead>
               <tr>
                 <th rowspan="4" class="color1">
@@ -218,7 +230,7 @@
             <img src="resources/logoMySQL.svg" alt="Logo MYSQL" />
             <img src="resources/logoAdobeXD.svg" alt="Logo Adobe XD" />
           </div>
-          <table class="tablecomp">
+          <table class="tablecomp" data-aos="zoom-in" data-aos-duration='600' data-aos-anchor-placement="center-bottom">
             <thead>
               <tr>
                 <th class="color1">Anglais</th>
@@ -279,38 +291,39 @@
         </div>
         <img src="resources/déco.jpg" alt="image ordinateur portable" />
         <div id="contact">
-          <form action="formulaire.php" method="post">
-            <h3>Contact</h3>
-
-            <label>Prénom <em>*</em></label>
+          <form id="contactForm" method="post">
+            <label for="prenom">Prénom <em>*</em></label>
             <input
               type="text"
               name="prenom"
+              id="prenom"
               pattern="[A-Za-z-]{2,}"
               maxlength="50"
             />
 
-            <label>Nom <em>*</em></label>
+            <label for="nom">Nom <em>*</em></label>
             <input
               type="text"
               name="nom"
+              id="nom"
               pattern="[A-Za-z-]{2,}"
               maxlength="50"
             />
 
-            <label>Portable</label>
+            <label for="telephone">Portable</label>
 
             <input
+              name="telephone"
               id="telephone"
               type="tel"
               placeholder="06xxxxxxxx"
               pattern="[0]{1}[6-7]{1}[0-9]{8}"
             />
 
-            <label>Email <em>*</em></label>
+            <label for="email">Email <em>*</em></label>
             <input
-              id="email"
               name="email"
+              id="email"
               type="email"
               placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -318,17 +331,17 @@
 
             <label for="message">Laissez moi un message : <em>*</em></label>
             <textarea
-              id="message"
               name="message"
+              id="message"
               rows="5"
               cols="33"
               pattern="[A-Za-z]{2,}"
-              maxlenght="1000"
+              maxlength="1000"
             ></textarea>
-            <p>
-              <em>Les champs marqué par * sont obligatoires</em>
+            <p id="smol">
+              <em>Les champs marqués par * sont obligatoires</em>
             </p>
-              <input type="submit" value="Envoyer" />
+            <button type="submit" id="submitButton">Envoyer</button>
           </form>
         </div>
         <img
