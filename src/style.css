@@ -191,11 +191,14 @@ header>ul>li>a{
   text-decoration: underline;
 }
 #container > .backDiv:nth-of-type(4) {
-  background: url(../resources/frise.png) no-repeat;
-  background-position: 57% 60%;
-  background-size: 50%;
   font-size: 3vh;
   line-height: 1.5em;
+}
+#frise{
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 50%;
 }
 #container > .backDiv:nth-of-type(4) > .prez {
   background-color: transparent;
@@ -204,7 +207,7 @@ header>ul>li>a{
   width: 35vw;
   position: absolute;
   top: 15%;
-  left: 15%;
+  left: 12%;
 }
 #exp2 {
   position: absolute;
