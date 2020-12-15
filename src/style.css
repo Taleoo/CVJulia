@@ -290,6 +290,64 @@ background-color: rgb(223, 223, 223);
   margin: 0 auto;
   width: 8vw;
 }
+
+.info1{
+  margin-left: 32rem;
+}
+
+.info2{
+  margin-right: -29rem;
+}
+.centre-interet{
+  display: inline-block;
+  text-align: center;
+  padding-top: 58rem;
+  padding-right: 15rem;
+  margin-left: -25rem;
+
+}
+
+#voyage{
+  width: 12rem;
+  text-align: center;
+}
+
+#micro-bulle{
+  width: 12rem;
+  text-align: center;
+}
+
+#guitare{
+  width: 12rem;
+  text-align: center;
+}
+
+#lecture{
+  width: 12rem;
+  text-align: center;
+}
+
+#rando{
+  width: 12rem;
+  text-align: center;
+}
+
+#muscu{
+  width: 12rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #lastDiv{
   padding: 4vh 0;
   position: relative;
